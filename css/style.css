@@ -157,7 +157,6 @@ nav{
 .toolbar{
      display: flex;
      align-items: center;
-     /* justify-content: space-between; */
      width: 90%;
      margin: 20px auto 40px;
 }
@@ -188,7 +187,6 @@ nav{
 
 .main{
      margin-top: 30px;
-     /* border: 2px solid black; */
      width: 90%;
      align-items: center;
      justify-content: center;
@@ -197,17 +195,6 @@ nav{
 
 
 /* Playlist header */
-
-
-/* .listheader{
-          display: flex;
-          padding: 5px;
-          margin: 5px;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 20px;
-          align-items: center;
-} */
 
 ul{
      display: flex;
@@ -471,9 +458,6 @@ hr{
      }
 
 }
-
-
-
 
 
 /* JavaScript css */
