@@ -1,11 +1,23 @@
 
 
+const menu = document.getElementById('menu');
+
+const play = document.getElementById('play');
+const pause = document.getElementById('pause');
+const playingText = document.getElementById('playingText');
+const playingTextP = document.getElementById('playingTextP');
+const nowPlaying = document.getElementById('nowPlaying');
+const playNumber = document.getElementById('playNumber');
+
+
+const hidden = 'hidden';
+const display = 'display';
+const color = 'color';
+const color2 = 'color2';
+
 /* nav dropdown function */
 
 function dropdown(){
-  const menu = document.getElementById('menu');
-  const hidden = 'hidden';
-  const display = 'display';
 
   if(menu.classList.contains('hidden')){
       menu.classList.add(display);
@@ -20,17 +32,7 @@ function dropdown(){
 /* changing button (play <-> pause) and changing title color (white <-> green) */
 
 function changeBtn() {
-     const play = document.getElementById('play');
-     const pause = document.getElementById('pause');
-     const playingText = document.getElementById('playingText');
-     const playingTextP = document.getElementById('playingTextP');
-     const nowPlaying = document.getElementById('nowPlaying');
-     const playNumber = document.getElementById('playNumber');
-     const hidden = 'hidden';
-     const display = 'display';
-     const color = 'color';
-     const color2 = 'color2';
-   
+     
      if (play.classList.contains('hidden')) {
        
        play.classList.add(display);
