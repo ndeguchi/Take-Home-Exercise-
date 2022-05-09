@@ -1,7 +1,9 @@
 
-
+/*nav dropdowwn*/
 const menu = document.getElementById('menu');
 
+
+/* play/pause button */
 const play = document.getElementById('play');
 const pause = document.getElementById('pause');
 const playingText = document.getElementById('playingText');
