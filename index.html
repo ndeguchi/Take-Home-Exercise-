@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Natsu Deguchi Take Home Exercise -->
+
+<head>
+	<title>Take Home Exercise</title>
+	<meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">	
+	<link rel="stylesheet" href="css/style.css">
+     <!-- <script src="script/jquery-3.4.1.min.js" defer="defer"></script> -->
+     <script src="script/JavaScript.js" defer="defer"></script>
+
+        				
+</head>
+
+<body>
+
+     <div class="wrapper">
+
+     <hrader>     
+     <nav>
+          <div class="nav-left">
+               <img class="pc" src="images/nav-left.svg" alt="PC display">
+               <img class="mb" src="images/nav-icon-left.svg" alt="Mobile display">
+          </div>
+
+          <div class="nav-right">
+          <img src="images/account-Icon.svg" class="account-Icon">
+
+
+          <div class="btn nav-btn"  onclick='dropdown()'>
+               <img src="images/account-Icon.svg"><p>usertesting</p><a href="#"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown-icon"><path d="M0 1.394C.05.944.538.6.988.85c.15.1.3.25.4.35 1.1 1.25 2.15 2.45 3.25 3.7.1.1.2.2.3.2.1 0 .15-.1.25-.15 1.1-1.2 2.2-2.45 3.25-3.65.2-.2.45-.45.7-.5.25-.05.5.05.65.2.15.15.25.4.2.65-.05.2-.2.4-.35.55-1.25 1.45-2.5 2.9-3.8 4.3-.2.25-.45.45-.75.5-.3 0-.55-.2-.75-.4-.4-.35-.75-.75-1.1-1.15-.95-1.05-1.9-2.15-2.8-3.2-.17-.198-.21-.243-.343-.443-.11-.164-.093-.313-.093-.413Z" fill="#fff"/></svg></a>
+
+               <div class="nav-links hidden" id="menu">
+               <ul>
+                    <li>Account</li>
+                    <li>Profile</li>
+                    <li>Private Seeion</li>
+                    <li>Settings</li>
+                    <hr>
+                    <li>Log out</li>
+               </ul>
+          </div>
+
+         
+     </nav>
+
+     </hrader>
+
+          <div class="container">
+
+
+               <div class="playListVitals"> 
+                    <div class="VitalsImg">
+                         <img class="PlaylistImgTop" src="images/Playlist Album Artwork.svg" alt="Playlist Album Artwork">
+                    </div>
+                    <div class="VitalsText">
+                         <p class="text1">PUBLIC PLAYLIST</p>
+                         <h1>Glass Animals Mix</h1>
+                         <P class="text2"><strong>BØRNS, Tame lmpala, Phantogram</strong> and more</P>
+                         <p class="text3">Made for <strong>Usertesting &bull; </strong>50 songs, 3 hr 14 min</p>
+                    </div>
+               </div>  
+
+               
+               <div class="toolbar">
+
+                    <div class="toolbar-item1">
+                         <svg id="pause" class="display icon2" onclick="changeBtn()" fill="none" width="60" height="60"  viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="30" cy="30" r="30" fill="#65D46E"/>
+                              <path d="M45.068 29.49 22.44 18.178A1.688 1.688 0 0 0 20 19.686v22.627a1.688 1.688 0 0 0 2.44 1.508l22.628-11.313a1.687 1.687 0 0 0 0-3.017Z" fill="#0F1A29"/>
+                         </svg>     
+                         
+                         <svg id="play" class="hidden icon2" onclick="changeBtn()" width="60" height="60" viewBox="0 0 60 60"fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="30" cy="30" r="30" fill="#65D46E"/>
+                              <path d="M26.2 18H22c-1 0-1.6.8-1.6 1.7v20.6c0 .9.7 1.6 1.6 1.6h4.3c1 0 1.6-.7 1.6-1.6V19.7c0-.9-.7-1.6-1.6-1.6ZM38.1 18h-4.3c-1 0-1.6.8-1.6 1.7v20.6c0 .9.7 1.6 1.6 1.6H38c1 0 1.7-.7 1.7-1.6V19.7c0-.9-.8-1.6-1.7-1.6Z" fill="#0F1A29"/>
+                         </svg>
+                    </div>
+
+                    <div class="toolbar-item2">
+
+                         <svg width="30" height="27" viewBox="0 0 30 27" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M29.128 4.51a8.278 8.278 0 0 0-2.477-2.916A8.166 8.166 0 0 0 19.338.387a8.215 8.215 0 0 0-3.27 1.969l-1.067.984-1.034-.949A8.142 8.142 0 0 0 10.685.385a8.092 8.092 0 0 0-3.829-.27 8.057 8.057 0 0 0-3.518 1.467A8.14 8.14 0 0 0 .874 4.51a8.121 8.121 0 0 0-.771 4.956 8.087 8.087 0 0 0 2.284 4.456L14.105 26.09a1.249 1.249 0 0 0 1.383.282c.154-.065.293-.161.41-.282l11.7-12.145a8.102 8.102 0 0 0 2.297-4.465 8.137 8.137 0 0 0-.767-4.968Z" fill="#65D46E"/>
+                         </svg>
+
+                              
+                         <svg width="30" height="28" viewBox="0 0 30 28" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M30 12.01a7.268 7.268 0 0 0-2.215-5.204 7.137 7.137 0 0 0-4.308-1.98.311.311 0 0 1-.239-.15A9.603 9.603 0 0 0 5.616 7.541a.314.314 0 0 1-.283.25 5.737 5.737 0 0 0-5.328 5.712 5.405 5.405 0 0 0 1.544 4.012 6.91 6.91 0 0 0 4.506 1.72 1.247 1.247 0 0 0 1.143-.788c.06-.153.09-.316.088-.48a1.279 1.279 0 0 0-1.269-1.23 4.124 4.124 0 0 1-2.714-1 2.966 2.966 0 0 1-.799-2.234 3.219 3.219 0 0 1 1.193-2.508 3.248 3.248 0 0 1 2.708-.66 1.25 1.25 0 0 0 1.5-1.148 7.106 7.106 0 0 1 13.523-2.61 1.197 1.197 0 0 0 1.176.713 4.608 4.608 0 0 1 3.447 1.311 4.69 4.69 0 0 1 1.45 3.407 4.793 4.793 0 0 1-4.298 4.738 1.25 1.25 0 1 0 .33 2.479A7.257 7.257 0 0 0 30 12.009Z" fill="#fff"/>
+                              <path d="M19.377 20.486H17.19a.313.313 0 0 1-.313-.312v-9.061a1.875 1.875 0 0 0-3.75 0v9.066a.312.312 0 0 1-.312.312h-2.187a1.249 1.249 0 0 0-.883 2.134l4.374 4.374a1.25 1.25 0 0 0 1.767 0l4.375-4.374a1.252 1.252 0 0 0-.19-1.923 1.249 1.249 0 0 0-.694-.21v-.006Z" fill="#fff"/>
+                         </svg>
+
+                         <svg width="30" height="6" viewBox="0 0 30 6" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12 0a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm9 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="#fff"/>
+                         </svg>
+
+                    </div>
+
+                    
+                    <div class="toolbar-item3">
+                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="m12.734 11.387 4.987 4.989a.956.956 0 0 1 0 1.35.967.967 0 0 1-1.35 0l-4.987-4.988a7.089 7.089 0 0 1-9.634-.98 7.095 7.095 0 0 1 .327-9.68 7.089 7.089 0 0 1 9.678-.328 7.095 7.095 0 0 1 .98 9.637ZM7.117 1.96a5.156 5.156 0 1 0 .002 10.312A5.156 5.156 0 0 0 7.117 1.96Z" fill="#fff"/>
+                         </svg>
+
+                         <p>Custom Order</p>
+
+                         <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 1.394C.05.944.538.6.988.85c.15.1.3.25.4.35 1.1 1.25 2.15 2.45 3.25 3.7.1.1.2.2.3.2.1 0 .15-.1.25-.15 1.1-1.2 2.2-2.45 3.25-3.65.2-.2.45-.45.7-.5.25-.05.5.05.65.2.15.15.25.4.2.65-.05.2-.2.4-.35.55-1.25 1.45-2.5 2.9-3.8 4.3-.2.25-.45.45-.75.5-.3 0-.55-.2-.75-.4-.4-.35-.75-.75-1.1-1.15-.95-1.05-1.9-2.15-2.8-3.2-.17-.198-.21-.243-.343-.443-.11-.164-.093-.313-.093-.413Z" fill="#fff"/>
+                         </svg>
+
+                    </div>
+
+                         
+               
+               </div>
+
+          
+               <div class="main">
+
+
+                    <div class="listheader">
+                         <ul>
+                              <li class="flex-item1">#</li>
+                              <li class="flex-item2">TITLE</li>
+                              <li class="flex-item3">ALBUM</li>
+                              <li class="flex-item4">DATE ADDED</li>
+                              <li class="flex-item5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.111 1.18A7 7 0 0 1 7 0a7.008 7.008 0 0 1 7 7A7 7 0 1 1 3.111 1.18Zm.648 10.67c.96.641 2.087.983 3.241.983A5.84 5.84 0 0 0 12.833 7a5.833 5.833 0 1 0-9.074 4.85Zm3.533-5.106 2.703 2.479a.583.583 0 0 1 .036.823.59.59 0 0 1-.824.036L6.314 7.43A.583.583 0 0 1 6.125 7V3.792a.583.583 0 1 1 1.167 0v2.952Z" fill="#fff"/></svg></li>
+                         </ul>
+                    </div>
+                    
+
+                    <hr>
+
+
+                    <div class="track">
+
+                         <ul>
+                              <li class="track-item1 num">1</li>
+                              <li class="track-item2"><img src="images/image1.svg" alt="image1"></li>
+                              <li class="track-item3">Space Ghost Coast to Coast <p>Glass Animals</p></li>
+                              <li class="track-item4">Dreamland (+ Bonus Levels)</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">3:07</li>
+                         </ul>
+
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">2</li>
+                              <li class="track-item2"><img src="images/image2.svg" alt="image2"></li>
+                              <li class="track-item3">Electric Love<p>BØRNS</p></li>
+                              <li class="track-item4">Dopamine</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6">***</li>
+                              <li class="track-item7">3:38</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">3</li>
+                              <li class="track-item2"><img src="images/image3.svg" alt="image3"></li>
+                              <li class="track-item3">Gooey<p>Glass Animals</p></li>
+                              <li class="track-item4">ZABA (Deluxe)</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">4:49</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">4</li>
+                              <li class="track-item2"><img src="images/image4.svg" alt="image4"></li>
+                              <li class="track-item3">Borderline<p>Tame Impala</p></li>
+                              <li class="track-item4">The Show Rush</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">3:58</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num"><div id="playNumber">5</div>
+
+                              <svg id="nowPlaying" class="hidden" width="14.8" height="20" viewbox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.7.7C6.7.3 6.4 0 6 0H4.8c-.4 0-.7.3-.7.7v18.5c0 .4.3.7.7.7H6c.4 0 .7-.3.7-.7V.7ZM10.7 8.9c0-.4-.3-.7-.7-.7H8.8c-.4 0-.7.3-.7.7V19c0 .4.3.7.7.7H10c.4 0 .7-.3.7-.7V9ZM14.8 14.5c0-.5-.3-.8-.7-.8H13c-.4 0-.7.3-.7.8V19c0 .5.3.8.7.8h1.2c.4 0 .7-.3.7-.8v-4.5ZM2.6 12.3c0-.4-.3-.7-.7-.7H.7c-.4 0-.7.3-.7.7v7c0 .4.3.7.7.7h1.2c.4 0 .7-.3.7-.7v-7Z" fill="#65D46E"/></svg></li>
+
+                              <li class="track-item2"><img src="images/image5.svg" alt="image5"></li>
+                              <li class="track-item3"  id="playingText" onclick='changeBtn()'>The Other Side of Paradise<p id="playingTextP">Glass Animals</p></li>
+                              <li class="track-item4">How to Be A Human Being</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">5:21</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">6</li>
+                              <li class="track-item2"><img src="images/image6.svg" alt="image6"></li>
+                              <li class="track-item3">Don't Move<p>Phantogram</p></li>
+                              <li class="track-item4">Nightlife</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">4:18</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">7</li>
+                              <li class="track-item2"><img src="images/image1.svg" alt="image1"></li>
+                              <li class="track-item3">Heat Waves<p>Glass Animals</p></li>
+                              <li class="track-item4">Dreamland (+ Bonus Levels)</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6">***</li>
+                              <li class="track-item7">3:59</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">8</li>
+                              <li class="track-item2"><img src="images/image7.svg" alt="image7"></li>
+                              <li class="track-item3">Cooks<p>Still Woozy</p></li>
+                              <li class="track-item4">Cooks</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">2:54</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">9</li>
+                              <li class="track-item2"><img src="images/image5.svg" alt="image5"></li>
+                              <li class="track-item3">Take a Slice<p>Glass Animals</p></li>
+                              <li class="track-item4">How to Be A Human Being</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6"><img src="images/filled-favorite.svg" alt="Filled favorite icon"></li>
+                              <li class="track-item7">3:50</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">10</li>
+                              <li class="track-item2"><img src="images/image8.svg" alt="image8"></li>
+                              <li class="track-item3">Feels Like We Only Go Backwards<p>Tame Impala</p></li>
+                              <li class="track-item4">Lonerism</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6">***</li>
+                              <li class="track-item7">3:13</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">11</li>
+                              <li class="track-item2"><img src="images/image9.svg" alt="image9"></li>
+                              <li class="track-item3">Lava<p>Still Woozy</p></li>
+                              <li class="track-item4">Lately EP</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6">***</li>
+                              <li class="track-item7">2:37</li>
+                         </ul>
+                    </div>
+
+                    <div class="track">
+                         <ul>
+                              <li class="track-item1 num">12</li>
+                              <li class="track-item2"><img src="images/image2.svg" alt="image2"></li>
+                              <li class="track-item3">American Money<p>BØRNS</p></li>
+                              <li class="track-item4">Dopamine</li>
+                              <li class="track-item5">2 months ago</li>
+                              <li class="track-item6">***</li>
+                              <li class="track-item7">4:21</li>
+                         </ul>
+                    </div>
+
+
+
+               </div>
+     
+          
+          </div>
+
+
+     </div>
+     
+</body>
+</html>
